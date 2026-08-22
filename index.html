@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PRO-AIRE | Aire Acondicionado y Calefacción Profesional</title>
+  <meta name="description" content="Venta, mantenimiento, ingeniería, instalación, reparación y servicio de sistemas de aire acondicionado y calefacción para hogares, comercios e industria.">
+  <meta name="keywords" content="aire acondicionado, calefacción, mantenimiento HVAC, instalación aire acondicionado, reparación HVAC, ingeniería HVAC, venta de equipos, servicio post-venta">
+  <meta property="og:title" content="PRO-AIRE | Aire Acondicionado y Calefacción Profesional">
+  <meta property="og:description" content="Soluciones integrales en climatización: venta, ingeniería, instalación, mantenimiento, reparación y servicio post-venta.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon — monograma PA inspirado en la retícula técnica del logotipo -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='10' fill='%23ffffff'/%3E%3Ccircle cx='24' cy='24' r='15' fill='none' stroke='%23a43d67' stroke-width='2'/%3E%3Cpath d='M9 30c8-11 22-14 30-5M10 19c10 5 19 4 28-4' fill='none' stroke='%23798a96' stroke-width='1.4' opacity='.75'/%3E%3Ctext x='24' y='29' text-anchor='middle' font-size='12' font-weight='800' font-family='sans-serif' fill='%23a43d67'%3EPA%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+        <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2"/>
+        <line x1="24" y1="2"  x2="24" y2="10" stroke="currentColor" stroke-width="2"/>
+        <line x1="24" y1="38" x2="24" y2="46" stroke="currentColor" stroke-width="2"/>
+        <line x1="2"  y1="24" x2="10" y2="24" stroke="currentColor" stroke-width="2"/>
+        <line x1="38" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="2"/>
+        <text x="24" y="29.5" text-anchor="middle" font-size="14" font-weight="800"
+              font-family="Inter, ui-sans-serif, sans-serif" fill="currentColor"
+              letter-spacing="0">PA</text>
+      </svg>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="PRO-AIRE — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="24" y1="2"  x2="24" y2="10" stroke="currentColor" stroke-width="2"/>
+              <line x1="24" y1="38" x2="24" y2="46" stroke="currentColor" stroke-width="2"/>
+              <line x1="2"  y1="24" x2="10" y2="24" stroke="currentColor" stroke-width="2"/>
+              <line x1="38" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="2"/>
+              <text x="24" y="29.5" text-anchor="middle" font-size="14" font-weight="800"
+                    font-family="Inter, ui-sans-serif, sans-serif" fill="currentColor"
+                    letter-spacing="0">PA</text>
+            </svg>
+          </div>
+          <div class="nav-logo-copy">
+            <span>PRO-AIRE</span>
+            <span>Aire acondicionado y calefacción</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Por qué elegirnos</a></li>
+            <li><a href="#ambientes">Soluciones</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#producto">Ingeniería</a></li>
+            <li><a href="#fotogrametria">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Solicitar Cotización
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Por qué elegirnos</a>
+      <a href="#ambientes">Soluciones</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#producto">Ingeniería</a>
+      <a href="#fotogrametria">Servicios</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Solicitar Cotización →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Venta · Mantenimiento · Ingeniería HVAC
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>PRO-AIRE</span></span>
+            <span class="line"><span>Aire acondicionado</span></span>
+            <span class="line"><span class="accent">y calefacción profesional.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            Soluciones integrales en <strong>venta, ingeniería, instalación, mantenimiento y reparación</strong> de sistemas HVAC para hogares, comercios e industria. Atención personalizada antes, durante y después del servicio.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Solicitar Cotización
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-solid fa-fan" style="font-size:15px; color:var(--gray);"></i>
+              Ver Soluciones
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-snowflake"></i>
+              Aire Acondicionado
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-temperature-arrow-up"></i>
+              Calefacción
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              Servicio Post-venta
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">Por qué elegirnos</div>
+            <h2 class="why-quote" id="why-heading">
+              El confort no debería fallar cuando más se necesita…
+              <em> por eso diseñamos sistemas confiables desde el inicio.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            PRO-AIRE combina experiencia técnica, ingeniería aplicada y servicio cercano para que cada sistema de climatización opere con eficiencia, seguridad y respaldo real.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-diagram-project"></i>
+            </div>
+            <h3>Ingeniería a la Medida</h3>
+            <p>Calculamos capacidad, distribución, cargas térmicas y condiciones del espacio para recomendar equipos que funcionen sin sobredimensionar tu inversión.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-user-gear"></i>
+            </div>
+            <h3>Técnicos Especializados</h3>
+            <p>Instalación, mantenimiento y diagnóstico con personal experimentado en sistemas residenciales, comerciales e industriales.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-arrows-spin"></i>
+            </div>
+            <h3>Servicio Integral</h3>
+            <p>Venta de equipos, instalación, mantenimiento preventivo, reparación y seguimiento post-venta con un solo punto de contacto.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+            <h3>Atención Personalizada</h3>
+            <p>Escuchamos la necesidad de cada cliente, explicamos alternativas y damos seguimiento para conservar rendimiento, confort y vida útil del equipo.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Especialidades
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Soluciones PRO-AIRE</div>
+            <h2 class="section-title" id="amb-heading">
+              Un mismo equipo,<br>
+              <span class="gold">para todo el ciclo HVAC</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Desde elegir el equipo correcto hasta mantenerlo trabajando al máximo rendimiento.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Qué necesita tu espacio?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Venta e Ingeniería -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="imagenes/hvac-split-installation.png"
+              alt="Técnico especializado ajustando un sistema tipo minisplit con herramientas de diagnóstico">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(164,61,103,0.15); border-color:rgba(164,61,103,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-calculator" style="color:var(--gold-light);"></i>
+              </div>
+              <h3>Venta e Ingeniería</h3>
+              <p>Selección de equipos, cálculo de capacidad y propuesta técnica para hogares, oficinas, locales y espacios industriales.</p>
+              <div class="amb-temp">Solución 01 — Proyecto Correcto</div>
+            </div>
+          </div>
+
+          <!-- Instalación -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="imagenes/hvac-residential-installation.jpg"
+              alt="Técnico instalando una unidad exterior de aire acondicionado en fachada residencial">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(30,136,168,0.15); border-color:rgba(71,176,206,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-screwdriver-wrench" style="color:#79d6ec;"></i>
+              </div>
+              <h3>Instalación Profesional</h3>
+              <p>Montaje, tubería, conexiones y puesta en marcha con estándares técnicos para preservar eficiencia y garantía.</p>
+              <div class="amb-temp">Solución 02 — Montaje Seguro</div>
+            </div>
+          </div>
+
+          <!-- Servicio -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="imagenes/hvac-rooftop-maintenance.webp"
+              alt="Técnico realizando mantenimiento a un equipo HVAC en azotea comercial">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(121,138,150,0.16); border-color:rgba(121,138,150,0.42);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-shield-halved" style="color:#dfe8ee;"></i>
+              </div>
+              <h3>Mantenimiento y Reparación</h3>
+              <p>Diagnóstico, limpieza, corrección de fallas, refacciones y servicio post-venta para conservar confort y rendimiento.</p>
+              <div class="amb-temp">Solución 03 — Operación Continua</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Del diagnóstico al servicio, <span class="gold">sin fricciones</span>
+          </h2>
+          <p>Un solo punto de contacto acompaña la selección, instalación y mantenimiento de tu sistema.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Diagnóstico del Espacio</h3>
+            <p>Revisamos dimensiones, uso, exposición, instalación existente y necesidades de confort para definir el alcance real.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Propuesta Técnica</h3>
+            <p>Recomendamos equipos, capacidades, tiempos de instalación y una cotización clara, pensada para rendimiento y presupuesto.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Instalación y Seguimiento</h3>
+            <p>Ejecutamos el servicio, probamos funcionamiento y dejamos recomendaciones de uso y mantenimiento post-venta.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO DESTACADO — Ingeniería HVAC
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Servicio Destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Ingeniería HVAC que sostiene<br>
+              <span class="gold">cada decisión de climatización</span>
+            </h2>
+            <p class="producto-lead">
+              Antes de comprar o reparar un equipo conviene entender qué necesita el espacio. En PRO-AIRE evaluamos capacidad, ubicación, consumo, uso diario y condiciones de instalación para darte una solución técnica, eficiente y duradera.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características del servicio integral HVAC">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-ruler-combined"></i></div>
+                <div>
+                  <h4>Cálculo y Selección de Equipo</h4>
+                  <p>Dimensionamos la solución para evitar bajo rendimiento, consumo excesivo o equipos innecesariamente grandes.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-plug-circle-check"></i></div>
+                <div>
+                  <h4>Instalación y Puesta en Marcha</h4>
+                  <p>Cuidamos ubicación, conexiones, drenajes, tuberías, pruebas y arranque del sistema.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-clipboard-check"></i></div>
+                <div>
+                  <h4>Mantenimiento Preventivo</h4>
+                  <p>Limpieza, revisión de presión, componentes eléctricos y desempeño para prevenir fallas costosas.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-toolbox"></i></div>
+                <div>
+                  <h4>Reparación y Servicio Post-venta</h4>
+                  <p>Atendemos fallas, refacciones y ajustes para recuperar confort sin reemplazos innecesarios.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Alcance del servicio integral HVAC">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">360°</span>
+                <span class="spec-name">Servicio Integral</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">HVAC</span>
+                <span class="spec-name">Ingeniería Aplicada</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Post</span>
+                <span class="spec-name">Venta y Soporte</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Pro</span>
+                <span class="spec-name">Equipo Técnico</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="topo-photo-frame">
+                <img src="imagenes/hvac-certified-rooftop.png"
+                     alt="Técnicos certificados revisando un sistema HVAC comercial en azotea">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Ingeniería — Instalación
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-crosshairs" style="color:var(--gold);"></i>
+                Confort + Eficiencia
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Estadísticas clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="360" data-suffix="°"
+                 aria-label="360 grados">0</div>
+            <div class="stat-lbl">Solución integral<br>HVAC</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="100" data-suffix="%"
+                 aria-label="100%">0</div>
+            <div class="stat-lbl">Enfoque técnico<br>y personalizado</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="5" data-suffix="+"
+                 aria-label="más de cinco servicios">0</div>
+            <div class="stat-lbl">Venta, instalación,<br>mantenimiento y reparación</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2" data-suffix=""
+                 aria-label="dos tipos de cliente">0</div>
+            <div class="stat-lbl">Residencial<br>y comercial</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+            <div class="label">Sectores</div>
+            <h2 class="section-title" id="sec-heading">
+            Climatización profesional para <span class="gold">cada tipo de espacio</span>
+          </h2>
+          <p>Adaptamos equipos, instalación y mantenimiento a la operación real de casas, oficinas, comercios e industria.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-house-chimney-window sector-icon" aria-hidden="true"></i>
+            <h3>Residencial</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-store sector-icon" aria-hidden="true"></i>
+            <h3>Comercial</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-building sector-icon" aria-hidden="true"></i>
+            <h3>Oficinas</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-industry sector-icon" aria-hidden="true"></i>
+            <h3>Industrial</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-hotel sector-icon" aria-hidden="true"></i>
+            <h3>Hoteles y Hospitalidad</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: VENTA DE EQUIPOS
+    ══════════════════════════════════════════════════ -->
+    <section id="fotogrametria" class="servicio srv-alt" aria-labelledby="foto-heading">
+      <div class="container">
+        <div class="servicio-wrap">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="foto-heading">
+              Venta de equipos<br><span class="gold">de climatización</span>
+            </h2>
+            <p class="servicio-lead">
+              Te ayudamos a elegir sistemas de aire acondicionado y calefacción adecuados para el uso, tamaño y operación de cada espacio.
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de venta de equipos de climatización">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Minisplits y sistemas residenciales</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Equipos comerciales e industriales</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Calefacción para espacios interiores</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Evaluación de capacidad y consumo</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Recomendación técnica personalizada</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Suministro con instalación opcional</li>
+            </ul>
+
+            <a href="#contacto" class="btn-gold">
+              Contáctanos
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="imagenes/pro-aire-servicio.png"
+                   alt="Técnico HVAC dando servicio a un sistema de aire acondicionado tipo minisplit">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Selección técnica
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: INSTALACIÓN PROFESIONAL
+    ══════════════════════════════════════════════════ -->
+    <section id="instalacion-hvac" class="servicio" aria-labelledby="topogps-heading">
+      <div class="container">
+        <div class="servicio-wrap flip">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="topogps-heading">
+              Instalación <span class="gold">profesional</span>
+            </h2>
+            <p class="servicio-lead">
+              Una instalación correcta protege el rendimiento del equipo, reduce fallas y mejora la vida útil del sistema.
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de instalación HVAC">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Instalación de aire acondicionado</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Instalación de calefacción</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Montaje de unidades interiores y exteriores</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Tubería, drenaje y conexión eléctrica</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Pruebas de funcionamiento y arranque</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Recomendaciones de uso y cuidado</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Servicio residencial, comercial e industrial</li>
+            </ul>
+
+            <a href="#contacto" class="btn-gold">
+              Contáctanos
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="imagenes/hvac-heat-pump-installation.png"
+                   alt="Técnicos instalando una bomba de calor exterior en una vivienda">
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-fan" style="color:var(--gold);"></i>
+                Puesta en marcha
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: MANTENIMIENTO PREVENTIVO
+    ══════════════════════════════════════════════════ -->
+    <section id="cartografia" class="servicio srv-alt" aria-labelledby="carto-heading">
+      <div class="container">
+        <div class="servicio-wrap">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="carto-heading">
+              Mantenimiento <span class="gold">preventivo</span>
+            </h2>
+            <p class="servicio-lead">
+              El mantenimiento periódico ayuda a conservar eficiencia, higiene del aire y operación confiable durante todo el año.
+            </p>
+
+            <ul class="srv-list" aria-label="Servicios de mantenimiento preventivo HVAC">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Limpieza de filtros y serpentines</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Revisión de presión y desempeño</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Inspección eléctrica y mecánica</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Detección temprana de fugas o fallas</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Ajustes para mejorar eficiencia</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Planes para hogares y negocios</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Recomendaciones de cuidado post-servicio</li>
+            </ul>
+
+            <p class="srv-note">
+              Un servicio preventivo bien programado suele ser más económico que una reparación urgente y ayuda a mantener estable la calidad del aire interior.
+            </p>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="imagenes/hvac-ductwork-service-1600.jpg"
+                   alt="Técnico realizando mantenimiento en ductería de climatización comercial">
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Menos fallas
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SERVICIO: REPARACIÓN Y SERVICIO
+    ══════════════════════════════════════════════════ -->
+    <section id="agrarios" class="servicio" aria-labelledby="agrarios-heading">
+      <div class="container">
+        <div class="servicio-wrap flip">
+
+          <div class="reveal">
+            <div class="label">Servicios Especializados</div>
+            <h2 class="section-title" id="agrarios-heading">
+              Reparación <span class="gold">y servicio</span>
+            </h2>
+            <p class="servicio-lead">
+              Diagnosticamos fallas y buscamos la solución más conveniente antes de recomendar un reemplazo.
+            </p>
+
+            <ul class="srv-list one-col" aria-label="Servicios de reparación y soporte HVAC">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Diagnóstico de equipos que no enfrían o no calientan correctamente</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Corrección de fallas eléctricas, mecánicas y de refrigeración</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Revisión de fugas, drenajes, ventilación y componentes</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Servicio post-venta y orientación técnica para conservar tu equipo</li>
+            </ul>
+
+            <a href="#contacto" class="btn-outline">
+              <i class="fa-solid fa-stethoscope" style="font-size:15px; color:var(--gray);"></i>
+              Diagnosticar falla
+            </a>
+          </div>
+
+          <div class="reveal d2">
+            <div class="srv-photo-frame">
+              <img src="imagenes/hvac-heating-service.jpg"
+                   alt="Técnico revisando un sistema de calefacción residencial abierto">
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-screwdriver-wrench" style="color:var(--gold);"></i>
+                Diagnóstico técnico
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Solicita tu <span class="gold">cotización HVAC</span>
+          </h2>
+          <p>Cuéntanos qué sistema necesitas, qué falla presenta tu equipo o qué espacio quieres climatizar. Te orientamos con atención personalizada.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Técnica Directa</h3>
+            <p class="ci-sub">Hablas con un equipo que entiende instalación, mantenimiento y servicio post-venta.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Cobertura</h4>
+                  <p>
+                     Atendemos proyectos residenciales,<br>
+                     comerciales e industriales.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfono</h4>
+                  <p>
+                    <a href="tel:+525546061127">+52 55 4606 1127</a><br>
+                    <a href="tel:+525553003384">+52 55 5300 3384</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Envíanos fotos del equipo, ubicación del servicio o medidas del espacio para orientarte mejor.</p>
+                  <a href="https://wa.me/525546061127" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Juan Pérez" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización integral HVAC</option>
+                    <option>Venta de equipo</option>
+                    <option>Instalación de aire acondicionado</option>
+                    <option>Mantenimiento preventivo</option>
+                    <option>Reparación o diagnóstico</option>
+                    <option>Calefacción</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle del servicio</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Cuéntanos el tipo de espacio, medidas aproximadas, equipo actual, falla o servicio que necesitas..."></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Solicitar Cotización por WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación con nuestro equipo técnico.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <circle cx="24" cy="24" r="17" fill="none" stroke="currentColor" stroke-width="2"/>
+            <line x1="24" y1="2"  x2="24" y2="10" stroke="currentColor" stroke-width="2"/>
+            <line x1="24" y1="38" x2="24" y2="46" stroke="currentColor" stroke-width="2"/>
+            <line x1="2"  y1="24" x2="10" y2="24" stroke="currentColor" stroke-width="2"/>
+            <line x1="38" y1="24" x2="46" y2="24" stroke="currentColor" stroke-width="2"/>
+            <text x="24" y="29.5" text-anchor="middle" font-size="14" font-weight="800"
+                  font-family="Inter, ui-sans-serif, sans-serif" fill="currentColor"
+                  letter-spacing="0">PA</text>
+          </svg>
+          <span>PRO-AIRE</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> PRO-AIRE — Profesionales en aire acondicionado y calefacción. Todos los derechos reservados.
+        </p>
+        <div class="footer-socials">
+          <a href="#"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="#"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://wa.me/525546061127" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/525546061127?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20cotizar%20un%20servicio%20de%20aire%20acondicionado%20o%20calefacci%C3%B3n."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>

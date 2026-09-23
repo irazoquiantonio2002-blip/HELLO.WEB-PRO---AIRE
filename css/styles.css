@@ -13,8 +13,10 @@
   --success: #25d366;
   --shadow: 0 18px 45px rgba(18, 24, 33, 0.12);
   --shadow-soft: 0 10px 28px rgba(18, 24, 33, 0.08);
+  --shadow-gold: 0 26px 54px rgba(164, 61, 103, 0.16), 0 10px 26px rgba(18, 24, 33, 0.1);
   --border: 1px solid rgba(121, 138, 150, 0.22);
   --container: 1180px;
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -67,6 +69,7 @@ select {
 .gold,
 .accent {
   color: var(--gold);
+  font-style: italic;
 }
 
 #loader {
@@ -239,12 +242,14 @@ select {
 .btn-gold,
 .btn-outline,
 .form-submit {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
   min-height: 48px;
   padding: 14px 24px;
+  overflow: hidden;
   border-radius: 6px;
   font-size: 14px;
   font-weight: 900;
@@ -261,10 +266,28 @@ select {
   box-shadow: 0 12px 24px rgba(164, 61, 103, 0.28);
 }
 
+.btn-gold::before,
+.form-submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -60%;
+  width: 36%;
+  height: 100%;
+  background: linear-gradient(115deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.65s ease;
+}
+
 .btn-gold:hover,
 .form-submit:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 34px rgba(164, 61, 103, 0.34);
+}
+
+.btn-gold:hover::before,
+.form-submit:hover::before {
+  left: 130%;
 }
 
 .btn-outline {
@@ -456,9 +479,11 @@ select {
 
 .hero-title {
   margin: 22px 0 22px;
+  font-family: var(--font-serif);
   font-size: 64px;
-  line-height: 0.98;
-  font-weight: 900;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .hero-title .line {
@@ -623,14 +648,17 @@ section {
 .section-title {
   margin: 16px 0 0;
   color: var(--ink);
+  font-family: var(--font-serif);
   font-size: 44px;
-  line-height: 1.08;
-  font-weight: 900;
+  line-height: 1.12;
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 .why-quote em {
   color: var(--gold);
-  font-style: normal;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .why-sub,
@@ -660,6 +688,15 @@ section {
   border: var(--border);
   border-radius: 8px;
   box-shadow: var(--shadow-soft);
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.f-card:hover,
+.proceso-step:hover,
+.sector-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(164, 61, 103, 0.3);
+  box-shadow: var(--shadow-gold);
 }
 
 .f-card::after,
@@ -733,6 +770,14 @@ section {
   border-radius: 8px;
   background: var(--ink);
   box-shadow: var(--shadow);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.amb-card:hover,
+.srv-photo-frame:hover,
+.topo-photo-frame:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px rgba(18, 24, 33, 0.22);
 }
 
 .amb-img,
@@ -742,6 +787,13 @@ section {
   height: 100%;
   min-height: inherit;
   object-fit: cover;
+  transition: transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.amb-card:hover .amb-img,
+.srv-photo-frame:hover img,
+.topo-photo-frame:hover img {
+  transform: scale(1.06);
 }
 
 .amb-card::before,
@@ -966,8 +1018,9 @@ section {
 }
 
 .stat-num {
+  font-family: var(--font-serif);
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .stat-lbl {
